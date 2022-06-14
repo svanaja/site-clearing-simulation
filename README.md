@@ -28,14 +28,17 @@ than quitting the simulation) incurs a cost to pay for the overhead of communica
 bulldozer driver.
 
 **Application Requirements**
+
 _Inputs_:
 1. A file containing a site map. This will be specified on the command line when the 
 application is started.
 2. Commands entered by the trainee on the console during the simulation run, as described 
 below under "Operation".
+
 _Outputs_:
 1. A list of all the commands that were entered by the trainee.
 2. A table providing itemized costs of the clearing operation and a total cost.
+3. 
 _Sequence of Operation_:
 1. The application is started with the site map file name provided as a parameter to the 
 application.
@@ -47,6 +50,7 @@ the user presses “Enter” until one of the following simulation ending events
 ◦ the trainee enters the quit command.
 4. The simulation ends and commands are no longer accepted. A list of commands entered and 
 an itemised expense report is displayed on the console.
+
 _Rules_:
 The site map is defined by a text file with one character per square of the site. Each row must have 
 the same number of characters. Plain land is marked with the letter ‘o’, rocky land is marked with 
@@ -61,7 +65,8 @@ rrrrrtoooo
 The initial position of the bulldozer will be outside of the site, to the left of the top left (north west) 
 square of the site, facing towards the east. The bulldozer will never be blocked (by an unremovable 
 tree) from entering the site by driving east.
-The available commands are:
+
+_The available commands are:_
 • Advance: this command takes a positive integer parameter to define the number of squares 
 the bulldozer should move forwards (in whatever direction it is currently facing);
 • Left: turn the bulldozer (on the spot) 90 degrees to the left of the direction it is facing;
