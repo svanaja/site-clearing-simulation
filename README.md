@@ -52,6 +52,7 @@ the user presses “Enter” until one of the following simulation ending events
 an itemised expense report is displayed on the console.
 
 _Rules_:
+
 The site map is defined by a text file with one character per square of the site. Each row must have 
 the same number of characters. Plain land is marked with the letter ‘o’, rocky land is marked with 
 the letter ‘r’, removable trees are marked with the letter ‘t’, and trees that must be preserved are 
@@ -67,10 +68,14 @@ square of the site, facing towards the east. The bulldozer will never be blocked
 tree) from entering the site by driving east.
 
 _The available commands are:_
+
 • Advance: this command takes a positive integer parameter to define the number of squares 
 the bulldozer should move forwards (in whatever direction it is currently facing);
+
 • Left: turn the bulldozer (on the spot) 90 degrees to the left of the direction it is facing;
+
 • Right: turn the bulldozer 90 degrees to the right;
+
 • Quit: end the simulation.
 
 Commands may be abbreviated to their first letter. Commands will be executed whenever the 
